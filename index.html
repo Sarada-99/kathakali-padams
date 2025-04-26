@@ -152,6 +152,12 @@
     </footer>
 
     <script>
+        async function searchKathakaliVideos(query) {
+  const response = await fetch(
+    `https://www.googleapis.com/youtube/v3/search?q=${query}+kathakali&key=${window.YOUTUBE_API_KEY}`
+  );
+  // ...
+}
         // Sample database of Kathakali Padams with YouTube video IDs
         const padamsDatabase = [
             {
